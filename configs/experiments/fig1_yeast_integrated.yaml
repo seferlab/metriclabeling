@@ -1,0 +1,15 @@
+# Figure 1, last curve: Metric Labeling on the integrated yeast network
+# (PPI + TAP complexes + Gasch expression + Huh localisation, noisy-or weights).
+name: fig1_yeast_integrated
+title: "S. cerevisiae integrated network, 90 GO terms"
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: yeast, n_terms: 90, network: integrated}
+methods:
+  - {label: Majority, method: majority}
+  - {label: FunctionalFlow, method: functional_flow}
+  - {label: MRF, method: mrf}
+  - {label: LCA 0.3 LSD Integrated, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: Lin 0.1 LSD Integrated, method: metric_labeling, distance: lin, alpha: 0.1}

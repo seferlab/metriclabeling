@@ -1,0 +1,25 @@
+# Ablations that are not in the paper but help interpret it:
+#  * same scoring for all three labeling models (uniform metric / SemiMAP / LSD),
+#    so the metric-approximation step is compared on equal terms,
+#  * LSD metric vs the raw semimetric, exact transport LP vs tree LP,
+#  * "split" vs "choice" handling of multi-labeled training proteins.
+# The exact transport LP needs ~3.5 GB per worker on S. pombe and does not fit
+# for yeast (tens of millions of variables): run this config with --jobs 1, or
+# drop that row (--methods) for yeast.
+name: ablation
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: pombe, n_terms: 90}
+  - {species: yeast, n_terms: 90}
+methods:
+  - {label: Potts ML (local), method: metric_labeling, distance: uniform}
+  - {label: GenMulticut (freq+local), method: genmulticut, runs: 50, score: frequency+local}
+  - {label: LCA 0.3 SemiMAP (freq+local), method: semimap, distance: lca, alpha: 0.3, runs: 50, score: frequency+local}
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: LCA 0.3 raw semimetric, method: metric_labeling, distance: lca, alpha: 0.3, metric: raw}
+  - {label: LCA 0.3 LSD transport LP, method: metric_labeling, distance: lca, alpha: 0.3, lp: transport, transport_max_vars: 20000000}
+  - {label: LCA 0.3 LSD tree LP, method: metric_labeling, distance: lca, alpha: 0.3, lp: tree}
+  - {label: LCA 0.3 LSD choice, method: metric_labeling, distance: lca, alpha: 0.3, known: choice}
+  - {label: LCA 0.3 LSD LP scores, method: metric_labeling, distance: lca, alpha: 0.3, score: lp}

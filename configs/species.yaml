@@ -1,0 +1,76 @@
+# Data sources for the seven species of the paper.
+#
+# Two snapshots are supported:
+#   original : the 2011 files from github.com/emresefer/metriclabeling
+#              (BioGRID 3.0.65, GO annotations of Jan 2011, GO OBO of May 2010).
+#              This is the closest to the data used in the paper.
+#   current  : latest BioGRID / GO releases (needs access to thebiogrid.org and
+#              geneontology.org).
+#
+# Paths are relative to data/raw/<source>/.
+
+sources:
+  original:
+    urls:
+      networks.tar.gz: https://raw.githubusercontent.com/emresefer/metriclabeling/master/data/networks.tar.gz
+      annotations.tar.gz: https://raw.githubusercontent.com/emresefer/metriclabeling/master/data/annotations.tar.gz
+      gene_ontology_ext.obo.obo.bz2: https://raw.githubusercontent.com/emresefer/metriclabeling/master/data/gene_ontology_ext.obo.obo.bz2
+      Mega_YeastX_geneexpression: https://raw.githubusercontent.com/emresefer/metriclabeling/master/data/Mega_YeastX_geneexpression
+    extract: [networks.tar.gz, annotations.tar.gz]
+    go: gene_ontology_ext.obo.obo.bz2
+    expression: Mega_YeastX_geneexpression
+  current:
+    urls:
+      go-basic.obo: https://purl.obolibrary.org/obo/go/go-basic.obo
+      BIOGRID-ORGANISM-LATEST.tab3.zip: https://downloads.thebiogrid.org/Download/BioGRID/Latest-Release/BIOGRID-ORGANISM-LATEST.tab3.zip
+      sgd.gaf.gz: https://current.geneontology.org/annotations/sgd.gaf.gz
+      pombase.gaf.gz: https://current.geneontology.org/annotations/pombase.gaf.gz
+      fb.gaf.gz: https://current.geneontology.org/annotations/fb.gaf.gz
+      wb.gaf.gz: https://current.geneontology.org/annotations/wb.gaf.gz
+      tair.gaf.gz: https://current.geneontology.org/annotations/tair.gaf.gz
+      mgi.gaf.gz: https://current.geneontology.org/annotations/mgi.gaf.gz
+      goa_human.gaf.gz: https://current.geneontology.org/annotations/goa_human.gaf.gz
+      gasch2000_complete_dataset.txt: https://raw.githubusercontent.com/emresefer/metriclabeling/master/data/Mega_YeastX_geneexpression
+    extract: []
+    go: go-basic.obo
+    expression: gasch2000_complete_dataset.txt
+
+species:
+  yeast:
+    taxon: [4932, 559292]
+    name: S. cerevisiae
+    original: {biogrid: networks/BIOGRID-ORGANISM-Saccharomyces_cerevisiae-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.sgd.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Saccharomyces_cerevisiae_S288c, gaf: sgd.gaf.gz}
+  pombe:
+    taxon: [4896, 284812]
+    name: S. pombe
+    original: {biogrid: networks/BIOGRID-ORGANISM-Schizosaccharomyces_pombe-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.GeneDB_Spombe.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Schizosaccharomyces_pombe_972h, gaf: pombase.gaf.gz}
+  fly:
+    taxon: [7227]
+    name: D. melanogaster
+    original: {biogrid: networks/BIOGRID-ORGANISM-Drosophila_melanogaster-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.fb.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Drosophila_melanogaster, gaf: fb.gaf.gz}
+  worm:
+    taxon: [6239]
+    name: C. elegans
+    original: {biogrid: networks/BIOGRID-ORGANISM-Caenorhabditis_elegans-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.wb.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Caenorhabditis_elegans, gaf: wb.gaf.gz}
+  arabidopsis:
+    taxon: [3702]
+    name: A. thaliana
+    original: {biogrid: networks/BIOGRID-ORGANISM-Arabidopsis_thaliana-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.tair.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Arabidopsis_thaliana_Columbia, gaf: tair.gaf.gz}
+  mouse:
+    taxon: [10090]
+    # also keep human-mouse BioGRID interactions whose partner maps to an MGI gene by
+    # symbol; this reproduces Table 1 of the paper (1261 proteins, 848 in the LCC)
+    cross_species: true
+    name: M. musculus
+    original: {biogrid: networks/BIOGRID-ORGANISM-Mus_musculus-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.mgi.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Mus_musculus, gaf: mgi.gaf.gz}
+  human:
+    taxon: [9606]
+    name: H. sapiens
+    original: {biogrid: networks/BIOGRID-ORGANISM-Homo_sapiens-3.0.65.tab.txt.bz2, gaf: annotations/gene_association.goa_human.bz2}
+    current:  {biogrid: BIOGRID-ORGANISM-LATEST.tab3.zip, biogrid_member: Homo_sapiens, gaf: goa_human.gaf.gz}

@@ -1,0 +1,15 @@
+# Figure 2: effect of the number of GO terms (90 / 150 / 300) on yeast.
+name: fig2_terms
+title: "S. cerevisiae PPI: number of GO terms"
+plot: combined
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: yeast, n_terms: 90, network: ppi}
+  - {species: yeast, n_terms: 150, network: ppi}
+  - {species: yeast, n_terms: 300, network: ppi}
+methods:
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: Lin 0.1 LSD, method: metric_labeling, distance: lin, alpha: 0.1}
+  - {label: Lin 0.7 LSD, method: metric_labeling, distance: lin, alpha: 0.7}

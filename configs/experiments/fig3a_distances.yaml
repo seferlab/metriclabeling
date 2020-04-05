@@ -1,0 +1,15 @@
+# Figure 3a: distance measures and uniform vs non-uniform assignment costs.
+name: fig3a_distances
+title: "S. cerevisiae PPI: distance measures"
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: yeast, n_terms: 90, network: ppi}
+methods:
+  - {label: Shortest Uni 0.1 LSD, method: metric_labeling, distance: sp, alpha: 0.1, costs: uniform}
+  - {label: Shortest Nonuni 0.1 LSD, method: metric_labeling, distance: sp, alpha: 0.1, costs: nonuniform}
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: LCA Uni 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3, costs: uniform}
+  - {label: Lin 0.1 LSD, method: metric_labeling, distance: lin, alpha: 0.1}
+  - {label: Lin 0.1 LSD Multi, method: metric_labeling, distance: lin, alpha: 0.1, score: frequency, rounds: 50}

@@ -1,0 +1,40 @@
+# Table 2: AUC on six further species with 90 / 150 / 300 GO terms.
+# Mouse uses cross-species BioGRID interactions mapped to MGI genes by symbol
+# (set in configs/species.yaml), which reproduces the paper's Table 1 numbers.
+# "+KB" columns combine the GO distance with d_KB (Eq. 16) and run LSD.
+name: table2
+table2: true
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: arabidopsis, n_terms: 90}
+  - {species: arabidopsis, n_terms: 150}
+  - {species: arabidopsis, n_terms: 300}
+  - {species: fly, n_terms: 90}
+  - {species: fly, n_terms: 150}
+  - {species: fly, n_terms: 300}
+  - {species: human, n_terms: 90}
+  - {species: human, n_terms: 150}
+  - {species: human, n_terms: 300}
+  - {species: pombe, n_terms: 90}
+  - {species: pombe, n_terms: 150}
+  - {species: pombe, n_terms: 300}
+  - {species: mouse, n_terms: 90}
+  - {species: mouse, n_terms: 150}
+  - {species: mouse, n_terms: 300}
+  - {species: worm, n_terms: 90}
+  - {species: worm, n_terms: 150}
+  - {species: worm, n_terms: 300}
+methods:
+  - {label: Maj, method: majority}
+  - {label: Neigh, method: neighborhood}
+  - {label: GenMultiCut, method: genmulticut, runs: 50}
+  - {label: Flow, method: functional_flow}
+  - {label: MRF, method: mrf}
+  - {label: dSP, method: metric_labeling, distance: sp, alpha: 0.0}
+  - {label: dSP+KB, method: metric_labeling, distance: sp, alpha: 0.1}
+  - {label: dLCA, method: metric_labeling, distance: lca, alpha: 0.0}
+  - {label: dLCA+KB, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: dLin, method: metric_labeling, distance: lin, alpha: 0.0}
+  - {label: dLin+KB, method: metric_labeling, distance: lin, alpha: 0.1}

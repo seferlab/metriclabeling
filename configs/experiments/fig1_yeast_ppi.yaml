@@ -1,0 +1,19 @@
+# Figure 1: ROC curves on the yeast PPI network, 90 GO terms.
+name: fig1_yeast_ppi
+title: "S. cerevisiae PPI, 90 GO terms"
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: yeast, n_terms: 90, network: ppi}
+methods:
+  - {label: Majority, method: majority}
+  - {label: Neighbour, method: neighborhood, radius: 2}
+  - {label: GenMulticut, method: genmulticut, runs: 50}
+  - {label: FunctionalFlow, method: functional_flow, steps: 6}
+  - {label: MRF, method: mrf}
+  - {label: LCA 0.3 SemiMAP, method: semimap, distance: lca, alpha: 0.3, runs: 50}
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: Lin 0.1 SemiMAP, method: semimap, distance: lin, alpha: 0.1, runs: 50}
+  - {label: Lin 0.1 LSD, method: metric_labeling, distance: lin, alpha: 0.1}
+  - {label: Lin 0.1 LSD Multi, method: metric_labeling, distance: lin, alpha: 0.1, score: frequency, rounds: 50}

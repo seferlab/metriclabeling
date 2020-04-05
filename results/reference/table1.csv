@@ -1,0 +1,8 @@
+species,proteins,proteins_in_lcc,annotated_proteins,interactions,interactions_in_lcc
+yeast,5612,5610,5612,53308,53307
+pombe,1403,1313,1391,2478,2419
+fly,6973,6858,3445,22185,22124
+worm,2794,2575,1482,4457,4328
+arabidopsis,1647,1212,1163,2953,2574
+mouse,1223,835,991,1517,1192
+human,8307,8084,5529,29296,29168

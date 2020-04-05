@@ -1,0 +1,76 @@
+{
+  "name": "ablation",
+  "source": "original",
+  "folds": 5,
+  "seed": 0,
+  "datasets": [
+    {
+      "species": "pombe",
+      "n_terms": 90
+    }
+  ],
+  "methods": [
+    {
+      "label": "Potts ML (local)",
+      "method": "metric_labeling",
+      "distance": "uniform"
+    },
+    {
+      "label": "GenMulticut (freq+local)",
+      "method": "genmulticut",
+      "runs": 50,
+      "score": "frequency+local"
+    },
+    {
+      "label": "LCA 0.3 SemiMAP (freq+local)",
+      "method": "semimap",
+      "distance": "lca",
+      "alpha": 0.3,
+      "runs": 50,
+      "score": "frequency+local"
+    },
+    {
+      "label": "LCA 0.3 LSD",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3
+    },
+    {
+      "label": "LCA 0.3 raw semimetric",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3,
+      "metric": "raw"
+    },
+    {
+      "label": "LCA 0.3 LSD transport LP",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3,
+      "lp": "transport",
+      "transport_max_vars": 20000000
+    },
+    {
+      "label": "LCA 0.3 LSD tree LP",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3,
+      "lp": "tree"
+    },
+    {
+      "label": "LCA 0.3 LSD choice",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3,
+      "known": "choice"
+    },
+    {
+      "label": "LCA 0.3 LSD LP scores",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3,
+      "score": "lp"
+    }
+  ],
+  "perturbation": null
+}

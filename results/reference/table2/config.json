@@ -1,0 +1,120 @@
+{
+  "name": "table2",
+  "table2": true,
+  "source": "original",
+  "folds": 5,
+  "seed": 0,
+  "datasets": [
+    {
+      "species": "arabidopsis",
+      "n_terms": 90
+    },
+    {
+      "species": "arabidopsis",
+      "n_terms": 150
+    },
+    {
+      "species": "arabidopsis",
+      "n_terms": 300
+    },
+    {
+      "species": "pombe",
+      "n_terms": 90
+    },
+    {
+      "species": "pombe",
+      "n_terms": 150
+    },
+    {
+      "species": "pombe",
+      "n_terms": 300
+    },
+    {
+      "species": "mouse",
+      "n_terms": 90,
+      "cross_species": true
+    },
+    {
+      "species": "mouse",
+      "n_terms": 150,
+      "cross_species": true
+    },
+    {
+      "species": "mouse",
+      "n_terms": 300,
+      "cross_species": true
+    },
+    {
+      "species": "worm",
+      "n_terms": 90
+    },
+    {
+      "species": "worm",
+      "n_terms": 150
+    },
+    {
+      "species": "worm",
+      "n_terms": 300
+    }
+  ],
+  "methods": [
+    {
+      "label": "Maj",
+      "method": "majority"
+    },
+    {
+      "label": "Neigh",
+      "method": "neighborhood"
+    },
+    {
+      "label": "GenMultiCut",
+      "method": "genmulticut",
+      "runs": 50
+    },
+    {
+      "label": "Flow",
+      "method": "functional_flow"
+    },
+    {
+      "label": "MRF",
+      "method": "mrf"
+    },
+    {
+      "label": "dSP",
+      "method": "metric_labeling",
+      "distance": "sp",
+      "alpha": 0.0
+    },
+    {
+      "label": "dSP+KB",
+      "method": "metric_labeling",
+      "distance": "sp",
+      "alpha": 0.1
+    },
+    {
+      "label": "dLCA",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.0
+    },
+    {
+      "label": "dLCA+KB",
+      "method": "metric_labeling",
+      "distance": "lca",
+      "alpha": 0.3
+    },
+    {
+      "label": "dLin",
+      "method": "metric_labeling",
+      "distance": "lin",
+      "alpha": 0.0
+    },
+    {
+      "label": "dLin+KB",
+      "method": "metric_labeling",
+      "distance": "lin",
+      "alpha": 0.1
+    }
+  ],
+  "perturbation": null
+}

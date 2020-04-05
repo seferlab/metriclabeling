@@ -1,0 +1,13 @@
+{
+  "Majority": 0.9293,
+  "Neighbour": 0.9542,
+  "FunctionalFlow": 0.9527,
+  "MRF": 0.9534,
+  "GenMulticut": 0.8888,
+  "Potts ML": 0.9163,
+  "SP ML": 0.9735,
+  "LCA LSD": 0.9695,
+  "Lin LSD": 0.9676,
+  "LCA 0.3 LSD": 0.9682,
+  "LCA 0.3 SemiMAP": 0.8819
+}

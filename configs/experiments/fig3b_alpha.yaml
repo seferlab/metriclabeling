@@ -1,0 +1,16 @@
+# Figure 3b: trade-off alpha between d_LCA and d_KB (Eq. 16).
+name: fig3b_alpha
+title: "S. cerevisiae PPI: d_LCA vs d_KB trade-off"
+source: original
+folds: 5
+seed: 0
+datasets:
+  - {species: yeast, n_terms: 90, network: ppi}
+methods:
+  - {label: LCA 0 LSD, method: metric_labeling, distance: lca, alpha: 0.0}
+  - {label: LCA 0.1 LSD, method: metric_labeling, distance: lca, alpha: 0.1}
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: LCA 0.5 LSD, method: metric_labeling, distance: lca, alpha: 0.5}
+  - {label: LCA 0.7 LSD, method: metric_labeling, distance: lca, alpha: 0.7}
+  - {label: LCA 0.9 LSD, method: metric_labeling, distance: lca, alpha: 0.9}
+  - {label: LCA 1 LSD, method: metric_labeling, distance: lca, alpha: 1.0}

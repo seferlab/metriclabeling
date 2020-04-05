@@ -1,0 +1,17 @@
+# Section 3.3: robustness to misannotated training proteins (yeast PPI).
+name: robustness_misannotation
+source: original
+folds: 5
+seed: 0
+perturbation: {type: misannotation, levels: [0.0, 0.1, 0.2, 0.3]}
+datasets:
+  - {species: yeast, n_terms: 90}
+  - {species: yeast, n_terms: 150}
+methods:
+  - {label: Majority, method: majority}
+  - {label: FunctionalFlow, method: functional_flow}
+  - {label: MRF, method: mrf}
+  - {label: LCA 0 LSD, method: metric_labeling, distance: lca, alpha: 0.0}
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: Lin 0 LSD, method: metric_labeling, distance: lin, alpha: 0.0}
+  - {label: Lin 0.1 LSD, method: metric_labeling, distance: lin, alpha: 0.1}

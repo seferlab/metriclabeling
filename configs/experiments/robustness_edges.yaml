@@ -1,0 +1,19 @@
+# Section 3.3: robustness to random edge removal (yeast PPI).
+name: robustness_edges
+source: original
+folds: 5
+seed: 0
+perturbation: {type: edge_removal, levels: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]}
+datasets:
+  - {species: yeast, n_terms: 90}
+  - {species: yeast, n_terms: 150}
+methods:
+  - {label: Majority, method: majority}
+  - {label: Neighbour, method: neighborhood}
+  - {label: GenMulticut, method: genmulticut, runs: 50}
+  - {label: FunctionalFlow, method: functional_flow}
+  - {label: MRF, method: mrf}
+  - {label: Shortest 0.1 LSD, method: metric_labeling, distance: sp, alpha: 0.1}
+  - {label: LCA 0.3 LSD, method: metric_labeling, distance: lca, alpha: 0.3}
+  - {label: Lin 0.1 LSD, method: metric_labeling, distance: lin, alpha: 0.1}
+  - {label: LCA 0.3 SemiMAP, method: semimap, distance: lca, alpha: 0.3, runs: 50}
