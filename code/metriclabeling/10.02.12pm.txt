@@ -1,0 +1,470 @@
+GO INFORMATION
+Ontology size is: 31924
+Part count is: 5812
+Edges are: 45961
+Biosize is 19539
+Cellularsize is 2856
+Molecularsize is 9529
+Root node for Biological sub
+8150
+Root node for Molecular sub
+3674
+Root node for Cellular sub
+5575
+
+
+RESULTS FOR A THALIANA FOR ATPID DATABASE
+Found number is8910
+Unfound number is6143
+Found number is8910
+Unfound number is21946
+Number of proteins on largest connected component is: 11630
+Number of proteins in all network is: 15053
+Number of interactions on ppi: 96276
+Number of interactions on connected ppi: 93515
+Clustering coefficient is: 0.298830637455
+Transitivity is: 0.167307377937
+Graph clique number: 20
+Diameter is: 25
+Eccentrcity is: 127
+Clustering coefficient is: 0.286746848708
+Transitivity is: 0.167723665655
+Graph clique number: 20
+All function count is:3935
+Bio num: 1890
+Cell num 388
+Molecular num 1657
+Number of annotated proteins is: 30856
+Number all proteins seen in the ppi network is: 15053
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 23208
+IN ONTOLOGY; Number of proteins that are Cell annotated:  20415
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 26907
+IN PPI; Number of proteins that are Biological function annotated: 7466
+IN PPI; Number of proteins that are Cell annotated:  5956
+IN PPI; Number of proteins that are Molecular annotated: 8098
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 5688
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  4752
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 6283
+
+
+RESULTS FOR D MELAGONASTER
+Experiment Types are:
+Two-hybrid 22069
+Phenotypic Suppression 5633
+Phenotypic Enhancement 4360
+Affinity Capture-Western 352
+Reconstituted Complex 179
+Co-purification 43
+Co-fractionation 43
+Co-localization 14
+Affinity Capture-MS 14
+Biochemical Activity 11
+Far Western 10
+Protein-RNA 1
+Dosage Rescue 1
+Co-crystal Structure 1
+Found number is5457
+Unfound number is1789
+Found number is5408
+Unfound number is7179
+Number of proteins on largest connected component is: 7130
+Number of proteins in all network is: 7247
+Number of interactions on ppi: 25061
+Number of interactions on connected ppi: 24994
+Clustering coefficient is: 0.0291668907932
+Transitivity is: 0.027257436669
+Graph clique number: 7
+Diameter is: 11
+Eccentrcity is: 55
+Clustering coefficient is: 0.0286960026709
+Transitivity is: 0.0272570497876
+Graph clique number: 7
+All function count is:5037
+Bio num: 2666
+Cell num 579
+Molecular num 1792
+Number of annotated proteins is: 12587
+Number all proteins seen in the ppi network is: 7247
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 10457
+IN ONTOLOGY; Number of proteins that are Cell annotated:  8670
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 10991
+IN PPI; Number of proteins that are Biological function annotated: 4470
+IN PPI; Number of proteins that are Cell annotated:  3871
+IN PPI; Number of proteins that are Molecular annotated: 4927
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 4406
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  3816
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 4850
+
+
+RESULTS FOR S CEREVISIAE
+Experiment Types are:
+Negative Genetic 86014
+Affinity Capture-MS 46139
+Synthetic Lethality 15274
+Positive Genetic 15025
+Synthetic Growth Defect 13700
+Two-hybrid 10707
+Affinity Capture-Western 10592
+Biochemical Activity 5926
+PCA 4991
+Dosage Rescue 4170
+Phenotypic Enhancement 3892
+Affinity Capture-RNA 3738
+Synthetic Rescue 3497
+Reconstituted Complex 3241
+Phenotypic Suppression 1885
+Co-purification 1656
+Co-fractionation 675
+Dosage Lethality 641
+Protein-RNA 528
+Co-localization 427
+Co-crystal Structure 348
+Synthetic Haploinsufficiency 201
+Dosage Growth Defect 171
+Protein-peptide 168
+FRET 120
+Far Western 73
+Affinity Capture-Luminescence 29
+Found number is5722
+Unfound number is120
+Found number is5676
+Unfound number is681
+Number of proteins on largest connected component is: 5987
+Number of proteins in all network is: 5987
+Number of interactions on ppi: 158116
+Number of interactions on connected ppi: 158116
+Clustering coefficient is: 0.173781295165
+Transitivity is: 0.101454743634
+Graph clique number: 33
+Diameter is: 5
+Eccentrcity is: 27
+Clustering coefficient is: 0.173781295165
+Transitivity is: 0.101454743634
+Graph clique number: 33
+All function count is:4330
+Bio num: 2057
+Cell num 645
+Molecular num 1628
+Number of annotated proteins is: 6357
+Number all proteins seen in the ppi network is: 5987
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 6357
+IN ONTOLOGY; Number of proteins that are Cell annotated:  6357
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 6357
+IN PPI; Number of proteins that are Biological function annotated: 5722
+IN PPI; Number of proteins that are Cell annotated:  5722
+IN PPI; Number of proteins that are Molecular annotated: 5722
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 5722
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  5722
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 5722
+
+
+RESULTS FOR C ELEGANS
+Experiment Types are:
+Two-hybrid 4576
+Phenotypic Enhancement 2111
+Affinity Capture-MS 57
+Affinity Capture-Western 29
+Reconstituted Complex 1
+Phenotypic Suppression 1
+Found number is3060
+Unfound number is4
+Found number is3060
+Unfound number is12832
+Number of proteins on largest connected component is: 3332
+Number of proteins in all network is: 3501
+Number of interactions on ppi: 6621
+Number of interactions on connected ppi: 6519
+Clustering coefficient is: 0.0514015111008
+Transitivity is: 0.0195285043386
+Graph clique number: 6
+Diameter is: 13
+Eccentrcity is: 43
+Clustering coefficient is: 0.0489202613505
+Transitivity is: 0.0195267431482
+Graph clique number: 6
+All function count is:3051
+Bio num: 1553
+Cell num 412
+Molecular num 1086
+Number of annotated proteins is: 15892
+Number all proteins seen in the ppi network is: 3501
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 10626
+IN ONTOLOGY; Number of proteins that are Cell annotated:  9717
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 8660
+IN PPI; Number of proteins that are Biological function annotated: 2459
+IN PPI; Number of proteins that are Cell annotated:  1675
+IN PPI; Number of proteins that are Molecular annotated: 2483
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 2350
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  1591
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 2394
+
+
+RESULTS FOR A THALIANA
+Experiment Types are:
+Two-hybrid 2472
+Reconstituted Complex 756
+PCA 512
+Affinity Capture-Western 500
+Affinity Capture-MS 126
+Phenotypic Enhancement 82
+Co-fractionation 71
+FRET 70
+Biochemical Activity 69
+Phenotypic Suppression 57
+Far Western 22
+Co-crystal Structure 20
+Synthetic Rescue 18
+Co-purification 17
+Affinity Capture-RNA 11
+Synthetic Growth Defect 9
+Protein-RNA 6
+Dosage Rescue 3
+Dosage Growth Defect 3
+Found number is861
+Unfound number is825
+Found number is759
+Unfound number is30097
+Number of proteins on largest connected component is: 1280
+Number of proteins in all network is: 1738
+Number of interactions on ppi: 3289
+Number of interactions on connected ppi: 2858
+Clustering coefficient is: 0.166190205599
+Transitivity is: 0.243642329779
+Graph clique number: 7
+Diameter is: 26
+Eccentrcity is: 1
+Clustering coefficient is: 0.145020532445
+Transitivity is: 0.241739130435
+Graph clique number: 7
+All function count is:3935
+Bio num: 1890
+Cell num 388
+Molecular num 1657
+Number of annotated proteins is: 30856
+Number all proteins seen in the ppi network is: 1738
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 23208
+IN ONTOLOGY; Number of proteins that are Cell annotated:  20415
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 26907
+IN PPI; Number of proteins that are Biological function annotated: 304
+IN PPI; Number of proteins that are Cell annotated:  342
+IN PPI; Number of proteins that are Molecular annotated: 748
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 215
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  239
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 581
+
+
+RESULTS FOR S POMBE
+Experiment Types are:
+Negative Genetic 5769
+Positive Genetic 1811
+Affinity Capture-MS 1349
+Synthetic Growth Defect 1210
+Affinity Capture-Western 1037
+Phenotypic Enhancement 702
+Two-hybrid 654
+Synthetic Lethality 533
+Dosage Rescue 528
+Phenotypic Suppression 424
+Synthetic Rescue 377
+Reconstituted Complex 334
+Co-localization 241
+Biochemical Activity 147
+Co-purification 118
+Dosage Lethality 67
+Co-fractionation 43
+Affinity Capture-RNA 35
+Far Western 34
+Dosage Growth Defect 25
+Co-crystal Structure 8
+Protein-peptide 4
+Protein-RNA 1
+PCA 1
+FRET 1
+Found number is1870
+Unfound number is30
+Found number is1539
+Unfound number is3691
+Number of proteins on largest connected component is: 1956
+Number of proteins in all network is: 2014
+Number of interactions on ppi: 12748
+Number of interactions on connected ppi: 12705
+Clustering coefficient is: 0.223844272453
+Transitivity is: 0.187780912228
+Graph clique number: 9
+Diameter is: 10
+Eccentrcity is: 49
+Clustering coefficient is: 0.221535615815
+Transitivity is: 0.18778667652
+Graph clique number: 9
+All function count is:3528
+Bio num: 1681
+Cell num 498
+Molecular num 1349
+Number of annotated proteins is: 5230
+Number all proteins seen in the ppi network is: 2014
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 5223
+IN ONTOLOGY; Number of proteins that are Cell annotated:  5225
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 5218
+IN PPI; Number of proteins that are Biological function annotated: 1869
+IN PPI; Number of proteins that are Cell annotated:  1870
+IN PPI; Number of proteins that are Molecular annotated: 1869
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 1817
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  1818
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 1817
+
+
+RESULTS FOR MUS MUSCULUS
+Experiment Types are:
+Affinity Capture-Western 580
+Reconstituted Complex 430
+Two-hybrid 417
+Affinity Capture-Luminescence 394
+Affinity Capture-MS 120
+Biochemical Activity 30
+Phenotypic Enhancement 22
+Protein-peptide 21
+Phenotypic Suppression 21
+Co-fractionation 20
+Co-purification 18
+Co-localization 13
+Co-crystal Structure 11
+Far Western 5
+Synthetic Rescue 1
+Synthetic Lethality 1
+Found number is1233
+Unfound number is29
+Found number is1219
+Unfound number is33228
+Number of proteins on largest connected component is: 927
+Number of proteins in all network is: 1270
+Number of interactions on ppi: 1606
+Number of interactions on connected ppi: 1350
+Clustering coefficient is: 0.0849845071643
+Transitivity is: 0.0404505333839
+Graph clique number: 7
+Diameter is: 17
+Eccentrcity is: 1
+Clustering coefficient is: 0.0814189501675
+Transitivity is: 0.0435246426285
+Graph clique number: 7
+All function count is:8734
+Bio num: 5261
+Cell num 759
+Molecular num 2714
+Number of annotated proteins is: 34447
+Number all proteins seen in the ppi network is: 1270
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 33360
+IN ONTOLOGY; Number of proteins that are Cell annotated:  33796
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 33426
+IN PPI; Number of proteins that are Biological function annotated: 1173
+IN PPI; Number of proteins that are Cell annotated:  1188
+IN PPI; Number of proteins that are Molecular annotated: 1196
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 858
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  868
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 878
+
+
+RESULTS FOR HUMAN
+Experiment Types are:
+Affinity Capture-Western 14068
+Two-hybrid 11543
+Reconstituted Complex 10409
+Affinity Capture-MS 6991
+Biochemical Activity 1299
+Co-purification 824
+Co-crystal Structure 400
+Affinity Capture-Luminescence 398
+Co-fractionation 324
+Far Western 316
+Protein-peptide 227
+Co-localization 214
+Phenotypic Enhancement 158
+Phenotypic Suppression 145
+Synthetic Growth Defect 117
+FRET 79
+PCA 76
+Synthetic Rescue 26
+Dosage Rescue 12
+Protein-RNA 10
+Affinity Capture-RNA 9
+Synthetic Lethality 2
+Found number is8230
+Unfound number is415
+Found number is8136
+Unfound number is9986
+Number of proteins on largest connected component is: 8505
+Number of proteins in all network is: 8819
+Number of interactions on ppi: 31707
+Number of interactions on connected ppi: 31469
+Clustering coefficient is: 0.115925970721
+Transitivity is: 0.0607998067766
+Graph clique number: 11
+Diameter is: 12
+Eccentrcity is: 328
+Clustering coefficient is: 0.112516579466
+Transitivity is: 0.060807850092
+Graph clique number: 11
+All function count is:9833
+Bio num: 5908
+Cell num 939
+Molecular num 2986
+Number of annotated proteins is: 18122
+Number all proteins seen in the ppi network is: 8819
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 14663
+IN ONTOLOGY; Number of proteins that are Cell annotated:  16643
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 15731
+IN PPI; Number of proteins that are Biological function annotated: 7431
+IN PPI; Number of proteins that are Cell annotated:  7725
+IN PPI; Number of proteins that are Molecular annotated: 7807
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 7156
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  7437
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 7535
+
+
+RESULTS FOR RATTUS NORVEGICUS
+Experiment Types are:
+Affinity Capture-Western 194
+Reconstituted Complex 174
+Two-hybrid 156
+Affinity Capture-MS 53
+Co-fractionation 13
+Far Western 12
+Co-purification 10
+Biochemical Activity 7
+Co-localization 5
+Phenotypic Enhancement 4
+Protein-peptide 2
+Phenotypic Suppression 1
+Co-crystal Structure 1
+Affinity Capture-RNA 1
+Found number is470
+Unfound number is12
+Found number is469
+Unfound number is24802
+Number of proteins on largest connected component is: 176
+Number of proteins in all network is: 490
+Number of interactions on ppi: 433
+Number of interactions on connected ppi: 205
+Clustering coefficient is: 0.0574765512266
+Transitivity is: 0.0486486486486
+Graph clique number: 3
+Diameter is: 15
+Eccentrcity is: 4
+Clustering coefficient is: 0.0446485260771
+Transitivity is: 0.0500417014178
+Graph clique number: 3
+All function count is:10054
+Bio num: 6190
+Cell num 920
+Molecular num 2944
+Number of annotated proteins is: 25271
+Number all proteins seen in the ppi network is: 490
+IN ONTOLOGY; Number of proteins that are Biological function annotated: 19145
+IN ONTOLOGY; Number of proteins that are Cell annotated:  18743
+IN ONTOLOGY; Number of proteins that are Molecular annotated: 22793
+IN PPI; Number of proteins that are Biological function annotated: 445
+IN PPI; Number of proteins that are Cell annotated:  456
+IN PPI; Number of proteins that are Molecular annotated: 467
+IN Largest Connected PPI; Number of proteins that are Biological function annotated: 165
+IN Largest Connected PPI; Number of proteins that are Cell annotated:  169
+IN Largest Connected PPI; Number of proteins that are Molecular annotated: 173
